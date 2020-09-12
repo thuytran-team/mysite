@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} News Achieve {% endblock %}
+
+{% block content %}
+
+<h1>Clothings for year{{year}}</h1>
+
+{% for Clothing in cloth_list %}
+
+<h2>{{Clothing.author}}</h2>
+<h1>{{Clothing.title}}</h1>
+<p>{{Clothing.description}}</p>
+<h4>{{Clothing.pub_date}}</h4>
+
+{%endfor%}
+
+
+{% endblock %}
